@@ -107,6 +107,12 @@ export async function inference(options: InferenceOptions): Promise<InferenceRes
     const env = { ...process.env };
     delete env.CLAUDECODE;
 
+    for (const key of Object.keys(env)) {
+      if (key.startsWith("CLAUDE_CODE_")) {
+        delete env[key];
+      }
+    }
+
     // BILLING: Always use subscription. Anthropic's credential precedence chain
     // (https://code.claude.com/docs/en/authentication#authentication-precedence)
     // puts BOTH ANTHROPIC_API_KEY and ANTHROPIC_AUTH_TOKEN above CLAUDE_CODE_OAUTH_TOKEN,

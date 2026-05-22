@@ -1,3 +1,12 @@
+import path from "node:path";
+
+function writePreCompactHandoff(payload: unknown) {
+  const handoffPath = path.join(process.env.HOME || "", ".claude", "PAI", "MEMORY", "STATE", "HANDOFF.md");
+  fs.mkdirSync(path.dirname(handoffPath), { recursive: true });
+  fs.writeFileSync(handoffPath, typeof payload === "string" ? payload : String(payload ?? ""), "utf8");
+}
+
+import fs from "node:fs";
 #!/usr/bin/env bun
 /**
  * PreCompact.hook.ts - Preserve Context Before Compaction (PreCompact)
@@ -167,7 +176,8 @@ async function main() {
     ].join('\n');
 
     // stdout: preserved through compaction
-    console.log(handover);
+    writePreCompactHandoff(handover);
+console.log(handover);
     // stderr: status feedback
     console.error('[PreCompact] Context captured for compaction handover');
   } else {

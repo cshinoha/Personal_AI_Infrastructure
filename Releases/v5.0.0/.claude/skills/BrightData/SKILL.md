@@ -1,6 +1,6 @@
 ---
 name: BrightData
-description: "4-tier progressive scraping with automatic escalation: Tier 1 WebFetch (fast, built-in), Tier 2 curl with Chrome headers (basic bot bypass), Tier 3 agent-browser (headless JavaScript rendering via Rust CLI daemon), Tier 4 Bright Data MCP proxy (CAPTCHA, advanced bot detection, residential proxies). Two workflows: FourTierScrape for single URLs, Crawl for multi-page site mapping (light crawl via scrape_batch loop up to 50 pages, or full crawl via Bright Data Crawl API). Always starts at Tier 1 and escalates only when blocked — Tier 4 has usage costs. Outputs URL content in markdown format. USE WHEN Bright Data, scrape URL, web scraping, bot detection, crawl site, CAPTCHA, can't access, site blocking, extract page content, scrape whole site, spider domain, convert URL to markdown, getting blocked. NOT FOR headless batch automation without scraping need (use Browser). NOT FOR simple public content (use WebFetch directly). NOT FOR real-browser bot bypass where staying logged in and zero CDP fingerprint matter (use Interceptor). Playwright is banned across PAI."
+description: "4-tier progressive scraping with automatic escalation: Tier 1 WebFetch (fast, built-in), Tier 2 curl with Chrome headers (basic bot bypass), Tier 3 agent-browser (headless JavaScript rendering via Rust CLI daemon), Tier 4 Bright Data MCP proxy (CAPTCHA, advanced bot detection, residential proxies). Two workflows: FourTierScrape for single URLs, Crawl for multi-page site mapping (light crawl via scrape_batch loop up"
 effort: medium
 ---
 
