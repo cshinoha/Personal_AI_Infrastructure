@@ -1,3 +1,12 @@
+---
+type: knowledge
+description: README
+created: 2026-05-22T10:05:47.436Z
+updated: 2026-05-22T10:05:47.436Z
+quality: draft
+related: []
+---
+
 # KNOWLEDGE
 
 `KNOWLEDGE/` is the curated knowledge graph — a typed network of notes across entity domains such as People, Companies, Ideas, and Research, with mandatory cross-links between related entries. The `Knowledge` skill manages add, search, and harvest operations against this directory.

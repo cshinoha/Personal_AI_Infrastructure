@@ -1,6 +1,6 @@
 ---
 name: Webdesign
-description: "Design and integrate web interfaces using Anthropic's Claude Design (claude.ai/design) as the primary engine, with optional downstream handoff to the frontend-design plugin for production code. Drives Claude Design through the Interceptor skill for programmatic access to the authenticated claude.ai session. USE WHEN: web design, UI design, create prototype, design system, design tokens, brand extraction, redesign site, mockup, wireframe, landing page, dashboard design, component library, design-to-code, figma alternative, claude design, frontend design, polish UI, design audit, accessibility review. ALSO USE WHEN: this skill is called as a sub-step of larger site work (blog, admin panel, marketing site) — it integrates designs INTO an existing application, not just greenfield. NOT FOR: static illustrations or diagrams (use Art), logo/brand asset generation (use Art), video/motion graphics (use Remotion), or arbitrary graphic design outside the web/UI domain."
+description: "Design and integrate web interfaces using Anthropic's Claude Design (claude.ai/design) as the primary engine, with optional downstream handoff to the frontend-design plugin for production code. Drives Claude Design through the Interceptor skill for programmatic access to the authenticated claude.ai session. USE WHEN: web design, UI design, create prototype, design system, design tokens, brand extraction, redesign"
 license: Complete terms in LICENSE.txt
 effort: medium
 ---
